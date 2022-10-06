@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'abelregular';
+    src: url('../fonts/abel-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pinyon_scriptregular';
+    src: url('../fonts/pinyonscript-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pinyonscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+     font-family: 'abelregular';
+     padding: 0;
+     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'abelregular';
+}
+
+ .section-heading{
+       background: url('../images/heading-bg.png') no-repeat center center/360px 150px;
+       text-align: center;
+       padding: 10px;
+       margin-bottom: 40px;
+}
+
+ .section-heading h2{
+   font-family: 'pinyon_scriptregular';
+    font-size: 30px;
+}
+
+
+    #foodItem figure{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        text-align: center;
+    }
+
+    #foodItem figure img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item-name{
+        font-size: 30px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .old-prize, .new-prize{
+        font-size: 24px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-weight: bold;
+        font-family: 'abelregular';
+
+    }
+
+    .old-prize{
+        text-decoration: line-through;
+    }
+
+    .new-prize{
+        color: red;
+    }
+
+
+@media only screen and (max-width: 600px) {
+
+    #siteHeader{
+        background: #fff;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        width: 150px;
+        height: 50px;
+    }
+
+    #logo > img{
+        width: 100%;
+        height: auto;
+    }
+
+    #toggle{
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: 10px;
+        display: block;
+        width: 60px;
+        height: 40px;
+        padding: 5px 2px 3px 1px;
+        margin-top: 10px;
+    }
+
+    .line{
+        color: #000;
+        display: block;
+        line-height: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #mobileSiteNav{
+        background: #000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    #mobileSiteNav ul{
+        list-style-type: none;
+        padding-left: 10px;
+    }
+
+    #mobileSiteNav ul li a{
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 5px;
+        display: block;
+        font-weight: bold;
+    }
+
+    #banner{
+        background: url('../images/mobile-banner.jpg') no-repeat center center/cover;
+        text-align: center;
+    }
+
+    .section-padding{
+        padding: 25px 10px;
+    }
+
+    #banner h1{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    #banner h1, #banner p{
+        color: #fff;
+    }
+
+    #banner p{
+        font-family: 'pinyon_scriptregular';
+        font-size: 26px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*for small screen*/
+@media only screen and (min-width: 600px) {
+
+    #logo{
+        width: 270px;
+        height: 100px;
+    }
+
+    #logo > img{
+        width: 100%;
+        height: auto;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    #siteHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+    }
+
+    #mobileSiteNav{
+        display: none;
+    }
+
+    #desktopNav{
+        list-style-type: none;
+    }
+
+    #desktopNav li{
+        float: left;
+    }
+
+     #desktopNav li a{
+        float: left;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding: 0 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #banner{
+        background: url('../images/banner.png') no-repeat center center/cover;
+        padding: 180px 50px 250px 50px;
+    }
+
+    #banner h1{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    #banner p{
+        width: 40%;
+    }
+
+    #banner h1,
+    #banner p{
+        color: #fff;
+    }
+
+    .section-padding{
+        padding: 30px 10px;
+    }
+
+}
+
